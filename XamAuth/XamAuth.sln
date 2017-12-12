@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth.Android", "XamAuth\XamAuth.Android\XamAuth.Android.csproj", "{90CC8E1D-0300-4E2C-9295-CBC3462953F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth.Android", "XamAuth.Android\XamAuth.Android.csproj", "{90CC8E1D-0300-4E2C-9295-CBC3462953F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth.iOS", "XamAuth\XamAuth.iOS\XamAuth.iOS.csproj", "{F83215BB-D9AF-49B5-BB13-56188FF7DA82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth.iOS", "XamAuth.iOS\XamAuth.iOS.csproj", "{F83215BB-D9AF-49B5-BB13-56188FF7DA82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth", "XamAuth\XamAuth\XamAuth.csproj", "{E07FBD50-F085-4FD8-AD04-1534DF7EDF67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAuth", "XamAuth\XamAuth.csproj", "{E07FBD50-F085-4FD8-AD04-1534DF7EDF67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
