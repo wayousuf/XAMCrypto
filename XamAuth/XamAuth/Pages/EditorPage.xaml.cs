@@ -52,12 +52,24 @@ namespace XamAuth.Pages
 
         private byte[] GetChiperText(string diaryText)
         {
-            return CryptoUtilities.StringToByteArray(diaryText);
+            string keyString;
+            if (!account.Properties.TryGetValue(kmKey, out keyString))
+                return null;
+
+            byte[] keyMaterial = Convert.FromBase64String(keyString);
+
+            return CryptoUtilities.Encrypt(CryptoUtilities.StringToByteArray(diaryText), keyMaterial);
         }
 
         private string GetDiaryText(byte[] cipherText)
         {
-            return CryptoUtilities.ByteArrayToString(cipherText);
+            string keyString;
+            if (!account.Properties.TryGetValue(kmKey, out keyString))
+                return null;
+
+            byte[] keyMaterial = Convert.FromBase64String(keyString);
+
+            return CryptoUtilities.ByteArrayToString(CryptoUtilities.Decrypt(cipherText, keyMaterial));
         }
     }
 }
